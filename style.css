@@ -107,7 +107,7 @@ header {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
   column-gap: 80px;
-  margin-top: 96px;
+  margin-top: 128px;
 }
 
 .header-text-box {
