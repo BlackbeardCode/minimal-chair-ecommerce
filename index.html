@@ -13,6 +13,14 @@
     />
   </head>
   <body>
+    <nav>
+      <div class="navbar">
+        <a href="#product-details">Product</a>
+        <a href="#testimonials">Testimonials</a>
+        <a href="#best-selling">Best selling</a>
+        <a href="#contact">Contact</a>
+      </div>
+    </nav>
     <div class="container">
       <header>
         <div class="header-text-box">
@@ -28,10 +36,10 @@
         <img src="hero.jpg" alt="hero" />
       </header>
 
-      <section>
+      <section id="product-details">
         <h2>What makes our chairs special</h2>
         <div class="grid-3-cols">
-          <div>
+          <div class="features-container">
             <svg
               xmlns="http://www.w3.org/2000/svg"
               fill="none"
@@ -54,7 +62,7 @@
             </p>
           </div>
 
-          <div>
+          <div class="features-container">
             <svg
               xmlns="http://www.w3.org/2000/svg"
               fill="none"
@@ -79,7 +87,7 @@
             </p>
           </div>
 
-          <div>
+          <div class="features-container">
             <svg
               xmlns="http://www.w3.org/2000/svg"
               fill="none"
@@ -106,7 +114,7 @@
         </div>
       </section>
 
-      <section class="testimonial-section">
+      <section id="testimonials" class="testimonial-section">
         <div class="grid-3-cols">
           <img src="customers.jpg" alt="People sitting on chairs" />
           <div class="testimonial-box">
@@ -121,7 +129,7 @@
         </div>
       </section>
 
-      <section>
+      <section id="best-selling">
         <h2>Our bestselling chairs</h2>
         <div class="grid-3-cols">
           <figure class="chair">
@@ -370,10 +378,29 @@
         </div>
       </section>
 
+      <section id="contact">
+        <div class="contact-form">
+          <form>
+            <h2>Contact us</h2>
+            <label for="name">Name</label>
+            <input type="text" name="name" placeholder="Type your name.." />
+            <label for="email">Email</label>
+            <input type="text" name="email" placeholder="Type your email" />
+            <label for="product">Product</label>
+            <select id="product" name="product">
+              <option value="laid-black">The Laid Black</option>
+              <option value="worker-bee">The Worker Bee</option>
+              <option value="chair-4/2">The Chair 4/2</option>
+            </select>
+            <input type="submit" value="SUBMIT"
+          </form>
+        </div>
+      </section>
+
       <footer>
-        Copyright &copy; 2027 by Jonas Schmedtmann. Part of "Build Responsive
-        Real-World Websites with HTML and CSS" online course. Use for learning
-        purposes only.
+        Copyright &copy; 2022 all rights reserved -
+        <strong>Minimal chair ecommerce</strong>. Used only for learning
+        purpose.
       </footer>
     </div>
   </body>
